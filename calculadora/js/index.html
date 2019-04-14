@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora simple con javascript, CSS y HTML5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="../css/calculadora.css" />
+	<script  type="text/javascript" src="../javascript/calculadora.js"></script>
+</head>
+<body>
+  <header id = "encabezado">
+    <form name="formcalculadora"
+    <tr>
+      <td>Calculadora</td>
+      </form>
+    </tr>
+    </form>
+  </header>
+  <nav id = "formato">
+    <form name = "formformato"
+    <tr>
+      <td>Estándar</td>
+    </tr>
+
+    </form>
+
+  </nav>
+<main>
+
+
+  <div class="calculadora">
+<form action="#" name="calculadora" id="calculadora">
+ <textarea id="fuentevisible" disabled>0</textarea>
+<table border="0">
+    <tr ">
+      <td id="tablas">MC</td>
+      <td id="tablas">MR</td>
+      <td id="tablas">M+</td>
+      <td id="tablas">M-</td>
+      <td id="tablas" >MS</td>
+      <td id="tablas"> M</td>
+    </tr>
+    </table>
+
+<p>
+	<input class="d" type="button" value="%" onclick="porcent()" />
+	<input class="d" type="button" value="&#8730;" onclick="raizc()" />	
+  <input class="d" type="button" value="x&#178;" onclick="potencia()" />
+  <input class="d" type="button" value="1&#8260;x" onclick="inve()" />
+	</p>
+<p>
+	<input type="button" class="d" value="CE" onclick="borradoParcial()"  />
+	<input type="button" class="d" value="C" onclick="borradoTotal()"  />
+	<input type="button" class="d" value="&lt;" onclick="retro()"   />
+	<input type="button" class="d" value="&#247;" onclick="operar('/')"  />
+	</p>
+	<p>
+    <input class="e" type="button" value="7" onclick="numero('7')" />
+    <input class="e" type="button" value="8" onclick="numero('8')" />
+    <input class="e" type="button" value="9" onclick="numero('9')" />
+    <input class="d" type="button" value="&#215;" onclick="operar('*')" />
+	</p>
+	<p>
+    <input class="e" type="button" value="4" onclick="numero('4')" />
+    <input class="e" type="button" value="5" onclick="numero('5')" />
+    <input class="e" type="button" value="6" onclick="numero('6')" />
+    <input class="d" type="button" value="-" onclick="operar('-')" />
+	</p>
+	<p>
+    <input class="e" type="button" value="1" onclick="numero('1')" />
+    <input class="e" type="button" value="2" onclick="numero('2')" />
+    <input class="e" type="button" value="3" onclick="numero('3')" />
+    <input class="d" type="button" value="+" onclick="operar('+')" />
+	</p>
+	<p>
+    <input class="d" type="button" value="&#177;" onclick="opuest()" />
+    <input class="e" type="button" value="0" onclick="numero('0')" />
+    <input class="d" type="button" value="." onclick="decimal('.')" />
+    <input class="d" type="button" value="=" onclick="igualar()" />
+	</p>
+	</form>
+  </div>
+    </main>
+</body>
+</html>
